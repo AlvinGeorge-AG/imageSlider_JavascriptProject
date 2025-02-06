@@ -84,19 +84,19 @@
         let slide;
         function slideShow()
         {
-            console.log('slideShow called');
+            //console.log('slideShow called');
             slide = setInterval(next, 1500);
             document.getElementById('alert').innerHTML='SLIDESHOW MODE ENABLED'
         }
         function stop()
         {
-            console.log('stop called');
+            //console.log('stop called');
             clearInterval(slide);
             document.getElementById('alert').innerHTML=''
         }
         function next()
         {
-            console.log('next called');
+            //console.log('next called');
             if (index === imageObjects.length - 1) {
                 index = 0;
             } else {
@@ -106,7 +106,7 @@
         }
         function previous()
         {
-            console.log('previous called');
+            //console.log('previous called');
             if (index === 0) {
                 index = imageObjects.length - 1;
             } else {
